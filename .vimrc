@@ -1,2 +1,2 @@
 " Startup dark plugins manager.
-source getcwd() .. '/dein.rc.vim'
+source dein.rc.vim
