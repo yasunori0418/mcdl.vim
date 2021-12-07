@@ -1,0 +1,10 @@
+[[plugins]]
+repo = 'kat0h/bufpreview.vim'
+on_ft = 'markdown'
+hook_source = '''
+    let g:bufpreview_browser = 'chromium'
+    augroup bufpreview
+        autocmd!
+        autocmd Filetype markdown :PreviewMarkdown
+    augroup END
+'''
