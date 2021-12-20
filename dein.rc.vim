@@ -18,6 +18,8 @@ if &runtimepath !~# '/dein.vim'
 endif
 " }}}
 
+let g:dein#install_progress_type = 'title'
+
 " Begin settings {{{
 " Load plugins management of toml type.
 if dein#load_state(s:dein_dir)
