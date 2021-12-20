@@ -1,0 +1,5 @@
+[[plugins]]
+repo = 'mattn/vim-sl'
+hook_add = '''
+    command! SL call sl#animate()
+'''
