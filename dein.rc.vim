@@ -9,6 +9,7 @@ let s:dein_dir = getcwd() .. '/dein/'
 let s:dein_repo = s:dein_dir .. 'repos/github.com/Shougo/dein.vim'
 " }}}
 
+
 " dein installation check {{{
 if &runtimepath !~# '/dein.vim'
     if !isdirectory(s:dein_repo)
@@ -18,10 +19,16 @@ if &runtimepath !~# '/dein.vim'
 endif
 " }}}
 
+
+" dein options {{{
+
 let g:dein#install_progress_type = 'title'
 let g:dein#enable_notification = v:true
 let g:dein#auto_recache = v:true
 let g:dein#lazy_rplugins = v:true
+
+" }}}
+
 
 " Begin settings {{{
 " Load plugins management of toml type.
@@ -42,6 +49,7 @@ if dein#load_state(s:dein_dir)
     call dein#save_state()
 endif
 " }}}
+
 
 " Plugin installation check {{{
 if dein#check_install()
