@@ -1,0 +1,7 @@
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'skanehira/denops-silicon.vim'
+depends = ['denops.vim']
+on_cmd = 'Silicon'
