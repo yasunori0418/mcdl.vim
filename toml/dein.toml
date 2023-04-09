@@ -1,2 +1,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
+
+[[plugins]] #･lightline.vim
+repo = 'itchyny/lightline.vim'
+hooks_file = '~/Project/mcdl.vim/hooks_files/lightline.vim'
